@@ -1,0 +1,13 @@
+.title collector feedback bias for bjt - highly stable low sensitivity to beta
+rc 1 2 4.7k
+rf 2 3 250k
+q1 2 3 4 mod1
+.model mod1 npn 
+re 4 0 1.2k
+vcc 1 0 dc 10
+vrc 1 2 dc 0
+vrf 2 3 dc 0
+.dc vcc 0 10 2
+.print dc v(2,4) i(vrc) i(vrf)
+.end
+ 

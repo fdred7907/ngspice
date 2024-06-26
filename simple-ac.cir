@@ -1,0 +1,8 @@
+demo of a simple AC Circuit
+v1 1 0 ac 12 sin(0 12 60Hz)
+r1 1 2 30
+c1 2 0 100u
+.ac lin 1 60 60 
+.print ac vm(1,2) vm(2)
+.end
+

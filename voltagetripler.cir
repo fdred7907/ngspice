@@ -1,0 +1,18 @@
+voltage tripler
+
+V1 n1 0 SIN(0 5 0.5)
+C1 n2 n1 20nF
+C2 n4 0 20nF
+C3 n2 n3 20nF
+.model diode D
+D1 n2 0 diode
+D2 n4 n2 diode
+D3 n3 n4 diode
+.CONTROL
+tran 0.1m 10
+set color0 = white
+set xbrushwidth = 2
+plot V(n1) V(n1)-V(n3)
+.endc
+.end
+

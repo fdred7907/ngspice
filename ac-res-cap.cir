@@ -1,0 +1,8 @@
+.title imple AC resistor capacitor circuit
+v1 0 1 sin(0 12 60)
+r1 1 2 30
+c1 0 1 100u
+.ac lin 1 60 60 
+.print ac v(1,2) v(2) 
+.end
+

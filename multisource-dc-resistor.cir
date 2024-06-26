@@ -1,0 +1,11 @@
+.title Multiple dc sources
+v1 1 0 dc 24
+r1 1 2 10k
+v2 3 0 dc 15
+r2 2 3 8.1k
+r3 2 0 4.7k
+.dc v1 0 24 4 v2 0 15 3
+.print dc v(2,3) v(1,2) v(2)
+.end
+
+

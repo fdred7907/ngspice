@@ -1,0 +1,17 @@
+dual clipper
+VIN 1 0 SIN(0 5 1khz)
+R 1 2 11.9k
+V1 3 0 dc 2.3v
+V2 0 4 dc 2.3v
+.MODEL DIODE D
+D1 2 3 DIODE
+D2 4 2 DIODE
+.CONTROL
+set color0=white
+TRAN 0.01ms 10ms
+*voltage waveform
+PLOT V(2)
+PLOT V(1)
+.ENDC
+.END
+

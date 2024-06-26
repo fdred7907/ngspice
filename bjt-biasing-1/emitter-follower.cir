@@ -1,0 +1,12 @@
+.title emitter follower biasing bjt 
+rb 1 4 240k
+re 2 3 2k
+vrb 4 0 dc 0
+vre 3 5 dc 0
+vee 0 5 dc 20
+q1 0 1 2 mod1 
+.model mod1 npn
+.dc vee 0 20 4 
+.print dc v(0,2) i(vrb) i(vre) 
+.end
+

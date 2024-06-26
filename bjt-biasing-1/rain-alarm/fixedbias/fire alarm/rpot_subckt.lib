@@ -1,0 +1,5 @@
+#R_POT simple subcircuit model
+.subckt R_POT +5V V- GND
+.param R_POT 10 100 10
+.ends
+

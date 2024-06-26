@@ -1,0 +1,12 @@
+.title integrator circuit using op amp
+.include LF356.MOD
+XU1 3 2 7 4 6 LF356/NS
+vin+ 3 0 0
+r 2 1 10k
+rc 6 2 10m
+vin- 1 0 PULSE(-1 1 2NS 2NS 2NS 1MS 2MS)
+vs+ 7 0 5
+vs- 4 0 -5
+.tran 1m 10m
+.plot tran v(1) v(6)
+.end

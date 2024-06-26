@@ -1,0 +1,9 @@
+.title simple ac sinewave circuit
+v1 0 1 sin(0 15 60 0 0)
+rload 0 1 10k
+.options itl5 = 30000
+.tran 1m 30m 
+.plot tran v(1)
+.four 60 v(1)
+.end
+
